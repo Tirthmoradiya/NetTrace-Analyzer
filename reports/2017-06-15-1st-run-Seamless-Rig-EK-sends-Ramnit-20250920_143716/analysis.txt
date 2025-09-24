@@ -1,0 +1,24 @@
+=== Stats ===
+total_packets: 1273
+tcp_packets: 1257
+udp_packets: 16
+dns_packets: 16
+http_packets: 375
+https_packets: 882
+ftp_packets: 0
+smtp_packets: 0
+ssh_packets: 0
+telnet_packets: 0
+icmp_packets: 0
+arp_packets: 0
+other_packets: 0
+processed_bytes: 973003
+protocols: {'tcp': {'packets': 1257, 'bytes': 946545, 'ports': [49156, 49164, 49165, 49166, 80, 49204, 49205, 49206, 49207, 49208, 443, 49214], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'udp': {'packets': 16, 'bytes': 998, 'ports': [60960, 63305, 61355, 55726, 56463, 57809, 53, 54680, 53405], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'icmp': {'packets': 0, 'bytes': 0, 'ports': [], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'http': {'packets': 375, 'bytes': 345434, 'ports': [49166, 80, 49204, 49205, 49206, 49214], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'https': {'packets': 882, 'bytes': 601111, 'ports': [49156, 49164, 49165, 49207, 49208, 443], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'dns': {'packets': 16, 'bytes': 998, 'ports': [60960, 63305, 61355, 55726, 56463, 57809, 53, 54680, 53405], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'ftp': {'packets': 0, 'bytes': 0, 'ports': [], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'smtp': {'packets': 0, 'bytes': 0, 'ports': [], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'ssh': {'packets': 0, 'bytes': 0, 'ports': [], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'telnet': {'packets': 0, 'bytes': 0, 'ports': [], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}, 'arp': {'packets': 0, 'bytes': 0, 'ports': [], 'types': [], 'operations': [], 'type_names': [], 'operation_names': [], 'methods': [], 'status_codes': [], 'queries': [], 'commands': [], 'versions': []}}
+
+=== Alerts ===
+[port_scans] 0 events
+[credential_leaks] 0 events
+[suspicious_dns] 0 events
+[data_exfiltration] 0 events
+[uncommon_ports] 0 events
+[malware_indicators] 14 events

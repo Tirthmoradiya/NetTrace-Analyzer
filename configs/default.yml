@@ -1,0 +1,29 @@
+portscan:
+  window_seconds: 60
+  unique_port_threshold: 20
+  syn_threshold: 10
+
+dns:
+  length_threshold: 45
+  entropy_threshold: 3.5
+
+data_exfil:
+  ratio_threshold: 3.0
+  min_out_bytes: 500000
+  baseline_window: 3600
+  alert_multiplier: 2.0
+
+ports:
+  uncommon_min_occurrences: 5
+  top_common: 10
+
+memory:
+  max_port_samples: 1000
+  cleanup_interval: 10000
+
+output:
+  reports_dir: reports
+  json_report: true
+  txt_report: true
+
+

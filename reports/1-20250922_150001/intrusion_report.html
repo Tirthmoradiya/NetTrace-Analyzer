@@ -1,0 +1,178 @@
+
+        <html>
+          <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Intrusion Report</title>
+            <style>
+        body { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+               Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+               margin: 0; background: #0b1020; color: #e6eefc; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 32px 20px; }
+        h1 { font-size: 28px; margin: 0 0 16px; }
+        .muted { color: #9db0ce; }
+        .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+        .card { background: #121a32; border: 1px solid #223055; border-radius: 12px; padding: 16px; }
+        .span-4 { grid-column: span 4; }
+        .span-6 { grid-column: span 6; }
+        .span-12 { grid-column: span 12; }
+        .metric { font-size: 22px; font-weight: 600; }
+        .kpi { display: flex; align-items: baseline; gap: 10px; }
+        .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+        .pill.CRITICAL { background: #ff3b3b20; color: #ff6c6c; border: 1px solid #ff6c6c40; }
+        .pill.HIGH { background: #ff9f2f20; color: #ffba6c; border: 1px solid #ffba6c40; }
+        .pill.MEDIUM { background: #ffd40020; color: #ffe16c; border: 1px solid #ffe16c40; }
+        .pill.LOW { background: #00d68f20; color: #6cffc1; border: 1px solid #6cffc140; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 8px; border-bottom: 1px solid #223055; font-size: 14px; }
+        th { text-align: left; color: #b9c8e4; }
+        tr:hover { background: #0e1630; }
+        .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+        .small { font-size: 12px; }
+        .section-title { font-size: 18px; margin-bottom: 10px; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+        .chip { background: #0e1630; border: 1px solid #223055; border-radius: 999px; padding: 6px 10px; }
+        </style>
+          </head>
+          <body>
+            <div class="container">
+              
+        <div class="grid">
+          <div class="span-12">
+            <h1>Intrusion Summary</h1>
+            <div class="muted small">PCAP: /Users/tirth-pc/Downloads/1.pcap · Generated: 2025-09-22T09:30:01.383179Z</div>
+          </div>
+        </div>
+        
+              
+        <div class="grid">
+          <div class="card span-4"><div class="kpi"><div class="metric">184</div><div class="muted">Total Packets</div></div></div>
+          <div class="card span-4"><div class="kpi"><div class="metric">158,196</div><div class="muted">Processed Bytes</div></div></div>
+          <div class="card span-4"><div class="kpi"><div class="metric">7</div><div class="muted">Total Alerts</div></div></div>
+        </div>
+        
+              
+        <div class="grid">
+          <div class="card span-6">
+            <div class="section-title">Severity Breakdown</div>
+            <div class="chips">
+        <span class="chip"><span class="pill CRITICAL">CRITICAL</span> 0</span><span class="chip"><span class="pill HIGH">HIGH</span> 2</span><span class="chip"><span class="pill MEDIUM">MEDIUM</span> 3</span><span class="chip"><span class="pill LOW">LOW</span> 2</span>
+            </div>
+          </div>
+          <div class="card span-6">
+            <div class="section-title">Alerts by Type</div>
+            <div class="chips">
+        <span class="chip">Malware Indicators: 4</span><span class="chip">Uncommon Ports: 2</span><span class="chip">Port Scans: 1</span><span class="chip">Credential Leaks: 0</span><span class="chip">Suspicious Dns: 0</span><span class="chip">Data Exfiltration: 0</span>
+            </div>
+          </div>
+        </div>
+        
+              
+        <div class="grid">
+          <div class="card span-12">
+            <div class="section-title">Top Indicators</div>
+            <div class="chips">
+        <span class="chip">Binary: MZ Header (Binary): 2</span><span class="chip">Persistence: AT Command Scheduling: 2</span>
+            </div>
+          </div>
+        </div>
+        
+              
+        <div class="grid">
+          <div class="card span-12">
+            <div class="section-title">Alert Details (showing 7 of 7)</div>
+            <div style="overflow:auto; max-height: 520px;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Type</th>
+                    <th>Indicator</th>
+                    <th>Signature</th>
+                    <th>Severity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+            <tr>
+              <td class="small mono">1279463323.094886</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Malware Indicators</td>
+              <td>Binary: MZ Header (Binary)</td>
+              <td class="small mono">\x4d\x5a</td>
+              <td><span class="pill HIGH">HIGH</span></td>
+            </tr>
+            
+            <tr>
+              <td class="small mono">1279463349.008577</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Malware Indicators</td>
+              <td>Binary: MZ Header (Binary)</td>
+              <td class="small mono">\x4d\x5a</td>
+              <td><span class="pill HIGH">HIGH</span></td>
+            </tr>
+            
+            <tr>
+              <td class="small mono">1279463296.041466</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Malware Indicators</td>
+              <td>Persistence: AT Command Scheduling</td>
+              <td class="small mono">at\s+\d+:</td>
+              <td><span class="pill MEDIUM">MEDIUM</span></td>
+            </tr>
+            
+            <tr>
+              <td class="small mono">1279463348.959602</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Port Scans</td>
+              <td></td>
+              <td class="small mono"></td>
+              <td><span class="pill MEDIUM">MEDIUM</span></td>
+            </tr>
+            
+            <tr>
+              <td class="small mono">1279463363.391944</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Malware Indicators</td>
+              <td>Persistence: AT Command Scheduling</td>
+              <td class="small mono">at\s+\d+:</td>
+              <td><span class="pill MEDIUM">MEDIUM</span></td>
+            </tr>
+            
+            <tr>
+              <td class="small mono">1279463290.026696</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Uncommon Ports</td>
+              <td></td>
+              <td class="small mono"></td>
+              <td><span class="pill LOW">LOW</span></td>
+            </tr>
+            
+            <tr>
+              <td class="small mono">1279463323.053687</td>
+              <td class="small mono">::1</td>
+              <td class="small mono">::1</td>
+              <td>Uncommon Ports</td>
+              <td></td>
+              <td class="small mono"></td>
+              <td><span class="pill LOW">LOW</span></td>
+            </tr>
+            
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+            </div>
+          </body>
+        </html>
+        
